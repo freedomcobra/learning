@@ -1,7 +1,8 @@
-command = '' 
+numBottles = 99
 
-while command != 'bye'
-	puts command
-	command = gets.chomp
+while numBottles > 0
+	puts numBottles.to_s + ' bottles of beer on the wall ' + numBottles.to_s + ' of beer.'
+	puts 'take one down, pass it around'
+	numBottles = numBottles - 1
+	puts numBottles.to_s + ' bottles of beer on the wall'
 end
-puts 'Come again soon!'
